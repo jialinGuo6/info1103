@@ -1,0 +1,257 @@
+use cs_JGUO6;
+INSERT INTO JUDGE (JUDGE_NAME, JUDGE_ADDRESS)
+	VALUES ('Liam Alex', '10 Somerset Road, Saint John, NB E2K 3X2');
+INSERT INTO JUDGE (JUDGE_NAME, JUDGE_ADDRESS)
+	VALUES ('Noah White', '11 Somerset Road, Saint John, NB E2K 5X2');
+    
+ INSERT INTO JUDGE_QUALIFICATION
+	VALUES (1, 'Canadian Kennel Club Judge III: Rottweilers');
+INSERT INTO JUDGE_QUALIFICATION
+	VALUES (2, 'Experienced commercial tree grower');
+select * from JUDGE_QUALIFICATION;  
+-- 24(2+10(4),2(5)) , 25(2,2) ,one  sub-contest
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Dog Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+								 2. Untagged items will not be accepted.
+                                 3. Work done in the last year only will be received.','2021-08-05','2021-08-05',6,null,2);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Cat Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.
+										 3. All articles competing in this Department must be the work of the exibitor entering in the name of such.
+										 4. Any article soiled or defaced is not eligible for competition.','2021-08-04','2021-08-04',7,null,2);
+ INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Bird Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.','2021-08-04','2021-08-04',7,null,2);    
+-- -------------- 
+ -- update CONTEST set  JUDGE_ID=4 where CONTEST_ID=223;
+ -- ---------------------
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Tree Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.
+										 3. All articles competing in this Department must be the work of the exibitor entering in the name of such.
+										 4. Any article soiled or defaced is not eligible for competition.','2021-08-04','2021-08-04',7,null,1);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Eating Food Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.
+										 3. All articles competing in this Department must be the work of the exibitor entering in the name of such.
+										 4. Any article soiled or defaced is not eligible for competition.','2021-08-04','2021-08-04',7,null,1);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Music Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.
+										 3. All articles competing in this Department must be the work of the exibitor entering in the name of such.
+										 4. Any article soiled or defaced is not eligible for competition.','2021-08-04','2021-08-04',7,null,1);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Fish Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.
+										 3. All articles competing in this Department must be the work of the exibitor entering in the name of such.
+										 4. Any article soiled or defaced is not eligible for competition.','2021-08-04','2021-08-04',7,null,1);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Mini Painting Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.
+										 3. All articles competing in this Department must be the work of the exibitor entering in the name of such.
+										 4. Any article soiled or defaced is not eligible for competition.','2021-08-04','2021-08-04',7,null,1);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Car Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.
+										 3. All articles competing in this Department must be the work of the exibitor entering in the name of such.
+										 4. Any article soiled or defaced is not eligible for competition.','2021-08-04','2021-08-04',7,null,1);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Color Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.
+										 3. All articles competing in this Department must be the work of the exibitor entering in the name of such.
+										 4. Any article soiled or defaced is not eligible for competition.','2021-08-04','2021-08-04',7,null,1);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Ball Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.
+										 3. All articles competing in this Department must be the work of the exibitor entering in the name of such.
+										 4. Any article soiled or defaced is not eligible for competition.','2021-08-04','2021-08-04',7,null,1);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Picture Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.
+										 3. All articles competing in this Department must be the work of the exibitor entering in the name of such.
+										 4. Any article soiled or defaced is not eligible for competition.','2021-08-04','2021-08-04',7,null,1);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Photo Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.
+										 3. All articles competing in this Department must be the work of the exibitor entering in the name of such.
+										 4. Any article soiled or defaced is not eligible for competition.','2021-08-04','2021-08-04',7,null,1);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Food Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.
+										 3. All articles competing in this Department must be the work of the exibitor entering in the name of such.
+										 4. Any article soiled or defaced is not eligible for competition.','2021-08-04','2021-08-04',7,null,1);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Baby Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+										 2. Untagged items will not be accepted.
+										 3. All articles competing in this Department must be the work of the exibitor entering in the name of such.
+										 4. Any article soiled or defaced is not eligible for competition.','2021-08-04','2021-08-04',7,null,1);
+
+      --   Bean Paintings (sub )     Veggie Paintings                            
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Light Show Contest','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+								 2. Untagged items will not be accepted.
+                                 3. Work done in the last year only will be received.','2021-08-05','2021-08-05',6,null,1);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Veggie Paintings','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+								 2. Untagged items will not be accepted.
+                                 3. Work done in the last year only will be received.','2021-08-05','2021-08-05',6,null,2);
+INSERT INTO CONTEST (CONTEST_CHAIR, CONTEST_TITLE, CONTEST_RULES, CONTEST_DROPOFF_DATE, CONTEST_DECISION_DATE, CONTEST_ENTRY_FEE,CONTEST_PARENT_ID,JUDGE_ID)
+	VALUES(NULL,'Bean Paintings','1. Exhibitors are responsible to determine in what section and class items should be entered. 
+								 2. Untagged items will not be accepted.
+                                 3. Work done in the last year only will be received.','2021-08-05','2021-08-05',6,'17',1);
+ --        2 entrants  --17 --18
+select * from CONTEST;
+INSERT INTO ENTRANT (ENTRANT_NAME, ENTRANT_ADDRESS, ENTRANT_EMAIL)
+	VALUES('Fred Fu', '12 Tucker Park Road, Saint John, NB E2O 2L5', 'Fred Fu@gmail.com');  -- 4
+INSERT INTO ENTRANT (ENTRANT_NAME, ENTRANT_ADDRESS, ENTRANT_EMAIL)
+	VALUES('Xyzznk Xyzzy', '13 Weston Road, Saint John, NB E2J 7K5', NULL);      -- 5   
+select * from ENTRANT;    
+ -- enters    delete from enters where ENTRANT_ID=4; 
+
+INSERT INTO enters(ENTRANT_ID,CONTEST_ID,ITEM_NAME,ENTRY_FEE_PAID)
+	VALUES('1','18','Wax Bean in Field',1); 
+INSERT INTO enters(ENTRANT_ID,CONTEST_ID,ITEM_NAME,ENTRY_FEE_PAID)
+	VALUES('1','18','Baked Beans Spilled in Oven',1);    
+INSERT INTO enters(ENTRANT_ID,CONTEST_ID,ITEM_NAME,ENTRY_FEE_PAID)
+	VALUES('1','17','Wax Bean in Field',1);
+INSERT INTO enters(ENTRANT_ID,CONTEST_ID,ITEM_NAME,ENTRY_FEE_PAID)
+	VALUES('1','17','Baked Beans Spilled in Oven',1);
+INSERT INTO enters(ENTRANT_ID,CONTEST_ID,ITEM_NAME,ENTRY_FEE_PAID)
+	VALUES('2','17','Watermelon in the Dark',1); 
+ select * from enters;    
+-- -------------------------
+INSERT INTO SPONSOR (SPONSOR_NAME, SPONSOR_ADDRESS, SPONSOR_OTHER_FUNDING, SPONSOR_OTHER_SUPPORT, SPONSOR_COMMITMENT, SPONSOR_LOGO)
+	VALUES("Halifax Seedz", '1 King Street South, Saint John, NB E2L 0G3', 10, NULL, NULL, NULL); -- 4   10(2)
+INSERT INTO SPONSOR (SPONSOR_NAME, SPONSOR_ADDRESS, SPONSOR_OTHER_FUNDING, SPONSOR_OTHER_SUPPORT, SPONSOR_COMMITMENT, SPONSOR_LOGO)
+	VALUES("CrossBees Molasses", '2 Dirt Road, Saint John, NB E2J 2K3', 100, NULL, NULL, NULL); -- 5   100(1)
+-- ------------------
+ INSERT INTO PRIZE (PRIZE_NAME, PRIZE_VALUE, PRIZE_COPIES, SPONSOR_ID,PRIZE_RULES)
+	VALUES('Seedz Prize', 10, 2, 1,'have been grown with their seeds');  -- 102
+INSERT INTO PRIZE (PRIZE_NAME, PRIZE_VALUE, PRIZE_COPIES, SPONSOR_ID,PRIZE_RULES)
+	VALUES('molasses and honey Prize', 100, 1, 2,'in any contest');   -- 103
+  select * from PRIZE;
+-- update PRIZE set  PRIZE_RULES='in any contest' where PRIZE_ID='2';
+ INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (1,17);
+ INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (1,18);
+-- ------
+INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,1);
+ INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,2);
+INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,3);
+ INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,4);
+INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,5);
+ INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,6);
+INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,7);
+ INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,8);
+INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,9);
+ INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,10);
+INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,11);
+ INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,12);
+INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,13);
+ INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,14);
+INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,15);
+ INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,16);
+INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,17);
+ INSERT INTO is_eligible_for (PRIZE_ID, CONTEST_ID)
+     VALUES (2,18);
+ -- 
+ select * from ENTRANT;
+ select * from PRIZE;
+ select* from wins;
+ select*from is_eligible_for;
+ select PRIZE_ID,CONTEST_ID from is_eligible_for  WHERE PRIZE_ID =1 and CONTEST_ID = 17;
+
+drop PROCEDURE T1;
+DELIMITER $$
+ CREATE PROCEDURE T1 (IN idENTRANT INTEGER, IN idPRIZE INTEGER, IN idCONTEST INTEGER, OUT OK int)
+BEGIN
+	DECLARE NUM_PRIZES INTEGER;
+     
+    if exists( select PRIZE_ID,CONTEST_ID from is_eligible_for  WHERE PRIZE_ID = idPRIZE AND CONTEST_ID= idCONTEST )  -- 1
+    then  
+     -- set OK=0; -- true
+        IF exists(select ENTRANT_ID from wins  WHERE ENTRANT_ID = idENTRANT AND PRIZE_ID = idPRIZE AND CONTEST_ID = idCONTEST)  -- 2
+        THEN
+           set OK=2 ; -- false
+	    ELSE -- set OK=0; -- true
+                SELECT COUNT(PRIZE_ID) INTO NUM_PRIZES FROM wins WHERE PRIZE_ID = idPRIZE;
+	            IF (NUM_PRIZES  >=(select PRIZE_COPIES from PRIZE  WHERE PRIZE_ID = idPRIZE) ) -- 3
+                THEN
+		        set OK=0; -- true
+                -- INSERT INTO wins (ENTRANT_ID, PRIZE_ID, CONTEST_ID) VALUES ( idENTRANT, idPRIZE, idCONTEST);
+	            ELSE  set OK=3; -- false
+	            END IF; -- 3
+        END IF; -- 2 
+    ELSE set OK=1; -- false
+    END IF; -- 1
+    
+ END$$
+DELIMITER ;
+--
+ select * from wins where exists(select ENTRANT_ID from wins  WHERE ENTRANT_ID = '1' AND PRIZE_ID = '1' AND CONTEST_ID = '1');
+ select ENTRANT_ID from wins  WHERE ENTRANT_ID = '1' AND PRIZE_ID = '1' AND CONTEST_ID = '1';
+--
+drop PROCEDURE U1;
+DELIMITER $$
+ CREATE PROCEDURE U1 (IN idENTRANT INTEGER, IN idPRIZE INTEGER, IN idCONTEST INTEGER, OUT OK int)
+BEGIN
+	 IF exists(select ENTRANT_ID from wins  WHERE ENTRANT_ID = idENTRANT AND PRIZE_ID = idPRIZE AND CONTEST_ID = idCONTEST)  -- 1
+	THEN  set OK=0 ; -- exist true
+           --  DELETE FROM wins where  ENTRANT_ID = idENTRAN AND PRIZE_ID = idPRIZE AND CONTEST_ID = idCONTEST;
+	ELSE  set OK=1; -- false
+	END IF; -- 1
+    
+ END$$
+DELIMITER ;
+
+select * from PRIZE;
+select * from is_eligible_for;
+ select * from CONTEST;
+ select distinct CONTEST_DECISION_DATE from CONTEST ;
+ --  id from j where name=
+select *from JUDGE;
+select CONTEST_TITLE from CONTEST where JUDGE_ID= (select JUDGE_ID from JUDGE where JUDGE_NAME='Liam Alex' ) and CONTEST_DECISION_DATE= '2021-08-05 00:00:00.0';
+-- rule
+select CONTEST_RULES from CONTEST where CONTEST_TITLE='Veggie Paintings';
+-- prize ----   use CONTEST_TITLE
+select PRIZE_NAME from PRIZE where PRIZE_ID in (select PRIZE_ID from is_eligible_for where CONTEST_ID=(select CONTEST_ID from CONTEST where CONTEST_TITLE='Veggie Paintings'));
+-- Contest Entries item + entrant_name
+select *from ENTRANT;
+select * from enters;
+select ENTRANT_NAME from ENTRANT where ENTRANT_ID in (select ENTRANT_ID from enters where CONTEST_ID=(select CONTEST_ID from CONTEST where CONTEST_TITLE='Light Show Contest'));
+-- select ENTRANT_NAME from ENTRANT where ENTRANT_ID in (select ENTRANT_ID from enters where CONTEST_ID=(select CONTEST_ID from CONTEST where CONTEST_TITLE='Veggie Paintings'));                                   
+select ITEM_NAME from enters  where CONTEST_ID=(select CONTEST_ID from CONTEST where CONTEST_TITLE='Veggie Paintings') ;
+-- Prize Details     value   rule  ----   use prize_name
+select concat('$',PRIZE_VALUE) from PRIZE where PRIZE_NAME='Seedz Prize';
+select PRIZE_RULES from PRIZE where PRIZE_NAME='Seedz Prize';   
+select concat('$',PRIZE_VALUE),PRIZE_RULES from PRIZE where PRIZE_NAME='Seedz Prize';  
+
+select * from PRIZE, is_eligible_for,CONTEST
+where  PRIZE.PRIZE_ID=is_eligible_for.PRIZE_ID and is_eligible_for.CONTEST_ID=CONTEST.CONTEST_ID and CONTEST_TITLE='Veggie Paintings'; 
+
+select PRIZE.PRIZE_NAME from PRIZE, is_eligible_for,CONTEST where  PRIZE.PRIZE_ID=is_eligible_for.PRIZE_ID and is_eligible_for.CONTEST_ID=CONTEST.CONTEST_ID and CONTEST_TITLE='Bean Paintings';
+
+select ENTRANT.ENTRANT_NAME,enters.ITEM_NAME from ENTRANT,enters,CONTEST
+where ENTRANT.ENTRANT_ID=enters.ENTRANT_ID and CONTEST.CONTEST_ID=enters.CONTEST_ID and CONTEST_TITLE='Veggie Paintings'; ;
+select enters.ITEM_NAME,ENTRANT.ENTRANT_NAME from ENTRANT,enters,CONTEST where ENTRANT.ENTRANT_ID=enters.ENTRANT_ID and CONTEST.CONTEST_ID=enters.CONTEST_ID and CONTEST_TITLE='Bean Paintings';
+
+select ENTRANT_ID,PRIZE_ID,CONTEST_ID from ENTRANT,PRIZE,CONTEST
+where ENTRANT_NAME='Fred Fu' and PRIZE_NAME='Seedz Prize' and CONTEST_TITLE='Bean Paintings';
